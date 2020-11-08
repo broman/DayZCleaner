@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DayZCleaner"
         mc:Ignorable="d"
-        Title="DayZCleaner by Whitename" Height="183.334" Width="400">
+        Title="DayZCleaner by Whitename" Height="194.667" Width="400" ResizeMode="NoResize" Icon="broom_1f9f9.png">
     <Grid>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Clean DayZ?" Width="112" VerticalAlignment="Center" TextAlignment="Center" Margin="139,6,141,97" FontSize="18" Height="29"/>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="This will close any instances of DayZ and remove all log files." VerticalAlignment="Center" Height="32" Width="190" TextAlignment="Center" Margin="101,40,101,60"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="This will close any instances of DayZ (including server instances) and remove all log files." VerticalAlignment="Center" Height="51" Width="190" TextAlignment="Center" Margin="102,51,102,52"/>
         <Button Content="Clean" HorizontalAlignment="Center" Width="75" VerticalAlignment="Bottom" Margin="0,0,0,20" Click="Button_Click"/>
 
     </Grid>
