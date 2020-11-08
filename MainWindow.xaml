@@ -1,0 +1,15 @@
+﻿<Window x:Class="DayZCleaner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DayZCleaner"
+        mc:Ignorable="d"
+        Title="DayZCleaner by Whitename" Height="183.334" Width="400">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Clean DayZ?" Width="112" VerticalAlignment="Center" TextAlignment="Center" Margin="139,6,141,97" FontSize="18" Height="29"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="This will close any instances of DayZ and remove all log files." VerticalAlignment="Center" Height="32" Width="190" TextAlignment="Center" Margin="101,40,101,60"/>
+        <Button Content="Clean" HorizontalAlignment="Center" Width="75" VerticalAlignment="Bottom" Margin="0,0,0,20" Click="Button_Click"/>
+
+    </Grid>
+</Window>
