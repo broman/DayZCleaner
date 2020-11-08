@@ -1,14 +1,14 @@
 ﻿using System;
-using System.Linq;
-using System.Windows;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
+using System.Windows;
 
 namespace DayZCleaner {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    
+
     /*
      * Copyright (c) 2020 Ryan Broman
      */
