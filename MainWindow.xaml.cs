@@ -29,26 +29,33 @@ namespace DayZCleaner {
                     MessageBox.Show(exc.ToString(), "Error, please report this to Whitename!");
                 }
             }
-            String sPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+
+            Int64 amountRemoved = 0;
+            string sPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
             var dir = new DirectoryInfo(sPath + "\\DayZ");
 
+
             foreach(var file in dir.EnumerateFiles("*.log")) {
+                amountRemoved += file.Length;
                 file.Delete();
             }
 
             foreach(var file in dir.EnumerateFiles("*.adm")) {
+                amountRemoved += file.Length;
                 file.Delete();
             }
 
             foreach(var file in dir.EnumerateFiles("*.rpt")) {
+                amountRemoved += file.Length;
                 file.Delete();
             }
 
             foreach(var file in dir.EnumerateFiles("*.mdmp")) {
+                amountRemoved += file.Length;
                 file.Delete();
             }
 
-            MessageBox.Show("DayZ cleanup complete!", "Operation Complete");
+            MessageBox.Show($"DayZ cleanup complete! Removed {Math.Round(Convert.ToDouble(amountRemoved)/1000000000, 2)}GB of log data.", "Operation Complete");
         }
     }
 }
